@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="78ede294-2c5a-4be2-b654-bf5fcd4b01b7" activeEnvironment="Default" name="REST Project 1" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+  </con:settings>
+  
+  <con:interface xsi:type="con:RestService" id="55ad94a1-544b-4b06-b2fd-a65a26d96f5d" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ciap.actlabinnovation.digitalcloudplatform.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://ciap.actlabinnovation.digitalcloudplatform.com</con:endpoint></con:endpoints><con:resource name="Micro" path="/micro/base/getApi" id="9b7e72f6-5fd0-47bd-a301-e040687ce33d"><con:settings/><con:parameters><con:parameter><con:name/><con:style>QUERY</con:style></con:parameter></con:parameters><con:method name="Micro 1" id="8b04139d-b599-4fcf-aad3-c29927ada69f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/plain;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="11deeee7-7b3c-43ea-b5f2-91a4fe3a2f41" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ciap.actlabinnovation.digitalcloudplatform.com</con:endpoint><con:request/><con:originalUri>https://ciap.actlabinnovation.digitalcloudplatform.com/micro/base/getApi</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="b1f25050-6d69-41ec-9df7-22df0f984b9b" name="TestSuite 1">
+    <con:description>TestSuite generated for REST Service [http://dev.digitalcloudplatform.com]</con:description>
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    
+    
+    
+    
+    
+    
+    <con:testCase id="15d147ba-2dd9-4187-83f1-6a5c2b6ee957" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 7" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="c5a3871a-587e-4e10-aa2b-f5b8eb0e4b13"><con:settings/><con:config service="https://ciap.actlabinnovation.digitalcloudplatform.com" methodName="Micro 1" resourcePath="/micro/base/getApi" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="aedd4582-53a1-4e94-ac09-b8a733a55c9a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ciap.actlabinnovation.digitalcloudplatform.com</con:endpoint><con:request/><con:originalUri>https://ciap.actlabinnovation.digitalcloudplatform.com/micro/base/getApi</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/>
+  </con:testSuite>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+</con:soapui-project>

@@ -1,0 +1,10 @@
+
+---
+applications:
+  - name: ds-communication-microservice-dev
+    buildpack: java_buildpack
+    path: target/ds-communication-microservice-0.0.1-SNAPSHOT.jar
+    services:
+      - DigitalSafety_Postgres_Service_Dev
+env:
+    db_service_name: DigitalSafety_Postgres_Service_Dev
